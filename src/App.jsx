@@ -4,6 +4,7 @@ import Hero from "./components/Hero";
 import WhyChoose from './components/WhyChoose'
 import Statistics from './components/Statistics'
 import ForCompanies from "./components/ForCompanies";
+import Else from "./components/else";
 function App() {
   return (
     <>
@@ -14,6 +15,7 @@ function App() {
        <WhyChoose/>
        <Statistics/>
        <ForCompanies/>
+       <Else/>
     
     </div> </>
   );
