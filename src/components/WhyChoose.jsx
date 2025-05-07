@@ -20,7 +20,7 @@ const WhyChoose = () => {
     },
     {
       title: "Interview Preparation",
-      description: "Practice with mock interviews and get instant feedback",
+      description: "",
       checked: false
     }
   ];
