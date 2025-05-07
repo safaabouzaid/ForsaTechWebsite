@@ -17,23 +17,23 @@ const Navbar = () => {
             </div>
           </div>
 
-          {/* Desktop Navigation */}
+          {/* Desktop navigation */}
           <div className="hidden md:flex items-center gap-8">
             {navItems.map((item) => (
               <a
                 key={item}
                 href="#"
-                className="text-gray-600 hover:text-indigo-600 transition-colors font-medium text-[15px] px-3 py-2"
+                className="text-gray-600 hover:text-purple-600 transition-colors font-medium text-[15px] px-3 py-2"
               >
                 {item}
               </a>
             ))}
-            <button className="bg-gradient-to-r from-indigo-600 to-cyan-500 text-white px-5 py-2.5 rounded-lg shadow-md hover:shadow-lg transition-all hover:opacity-90 ml-2 text-sm font-semibold">
+            <button className="bg-gradient-to-r from-blue-500  to-purple-600 text-white px-5 py-2.5 rounded-lg shadow-md hover:shadow-lg transition-all hover:opacity-90 ml-2 text-sm font-semibold">
               Get Started
             </button>
           </div>
 
-          {/* Mobile Menu Button */}
+          {/* Mobile   */}
           <button
             className="md:hidden text-gray-700 p-2 rounded-lg hover:bg-gray-100 transition-all"
             onClick={() => setMenuOpen(!menuOpen)}
@@ -42,20 +42,20 @@ const Navbar = () => {
           </button>
         </div>
 
-        {/* Mobile Menu */}
+        {/* Mobile  */}
         {menuOpen && (
           <div className="md:hidden absolute top-16 left-0 right-0 bg-white border-t border-gray-200 py-4 px-6 shadow-lg">
             {navItems.map((item) => (
               <a
                 key={item}
                 href="#"
-                className="block py-3 text-gray-700 hover:text-indigo-600 font-medium border-b border-gray-100"
+                className="block py-3 text-gray-700 hover:text-purple-600 font-medium border-b border-gray-100"
                 onClick={() => setMenuOpen(false)}
               >
                 {item}
               </a>
             ))}
-            <button className="w-full mt-4 bg-gradient-to-r from-indigo-600 to-cyan-500 text-white py-3 rounded-lg shadow-md font-semibold">
+            <button className="w-full mt-4 bg-gradient-to-r from-blue-500  to-purple-600 text-white py-3 rounded-lg shadow-md font-semibold">
               Get Started
             </button>
           </div>

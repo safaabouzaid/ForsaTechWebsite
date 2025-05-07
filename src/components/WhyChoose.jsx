@@ -51,7 +51,7 @@ const WhyChoose = () => {
           </motion.p>
         </div>
 
-        {/* Features Grid */}
+        {/* Features  */}
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-2 mb-20">
           {features.map((feature, index) => (
             <motion.div
@@ -63,7 +63,7 @@ const WhyChoose = () => {
               className="bg-white p-6 rounded-xl border border-gray-200 hover:border-indigo-200 hover:shadow-lg transition-all"
             >
               <div className="flex items-start gap-4">
-                <div className={`p-2 rounded-full ${feature.checked ? 'bg-indigo-100 text-indigo-600' : 'bg-gray-100 text-gray-400'}`}>
+                <div className={`p-2 rounded-full ${feature.checked ? 'bg-indigo-100 text-blue-500' : 'bg-gray-100 text-gray-400'}`}>
                   <FiCheckCircle size={22} strokeWidth={feature.checked ? 2 : 1.5} />
                 </div>
                 <div>
@@ -80,7 +80,7 @@ const WhyChoose = () => {
           ))}
         </div>
 
-        {/* CTA Section */}
+        {/*  Section */}
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}
@@ -96,7 +96,7 @@ const WhyChoose = () => {
             <motion.button
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.98 }}
-              className="bg-gradient-to-r from-indigo-600 to-cyan-500 text-white px-8 py-3.5 rounded-lg shadow-md hover:shadow-lg transition-all font-medium text-sm"
+              className="bg-gradient-to-r from-blue-500  to-purple-600 text-white px-8 py-3.5 rounded-lg shadow-md hover:shadow-lg transition-all font-medium text-sm"
             >
               <FiDownload className="inline mr-2" size={18} />
               Download App

@@ -60,7 +60,7 @@ const ForCompanies = () => {
           </motion.p>
         </div>
 
-        {/* Features Grid */}
+        {/* Features  */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
           {features.map((feature, index) => (
             <motion.div
@@ -78,13 +78,13 @@ const ForCompanies = () => {
                 <h3 className="text-xl font-semibold text-gray-800">{feature.title}</h3>
               </div>
               <p className="text-gray-500 mb-6">{feature.description}</p>
-              <a href="#" className="text-indigo-600 font-medium flex items-center gap-2 hover:text-indigo-800 transition-colors">
+              <a href="#" className="text-blue-500 font-medium flex items-center gap-2 hover:text-blue-500 transition-colors">
                 {feature.link} <FiArrowRight size={16} />
               </a>
             </motion.div>
           ))}
         </div>
-        {/* Register Button - Now placed after testimonials */}
+        {/* Register  */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -94,7 +94,7 @@ const ForCompanies = () => {
         >
           <h3 className="text-2xl font-bold mb-4">Ready to Transform Your Hiring?</h3>
           <p className="mb-6 opacity-90 max-w-2xl mx-auto">Join hundreds of companies who found their perfect candidates with ForsaTech</p>
-          <button className="bg-gradient-to-r from-indigo-600 to-cyan-500 text-white px-8 py-3.5 rounded-lg shadow-md hover:shadow-lg transition-all font-medium text-sm">
+          <button className="bg-gradient-to-r from-blue-500  to-purple-600 text-white px-8 py-3.5 rounded-lg shadow-md hover:shadow-lg transition-all font-medium text-sm">
             Register as a company
           </button>
         </motion.div>

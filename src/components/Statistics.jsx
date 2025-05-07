@@ -26,7 +26,7 @@ const Statistics = () => {
           </motion.p>
         </div>
 
-        {/* Stats Grid */}
+        {/* Stats  */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20">
           {/* Stat 1 */}
           <motion.div
@@ -61,7 +61,7 @@ const Statistics = () => {
           </motion.div>
         </div>
 
-        {/* CTA Button */}
+        {/*  Button */}
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}

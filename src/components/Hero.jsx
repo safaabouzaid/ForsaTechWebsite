@@ -7,7 +7,7 @@ const Hero = () => {
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
           
-          {/* Text Content */}
+          {/* Text  */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
@@ -15,19 +15,19 @@ const Hero = () => {
             className="lg:w-1/2 space-y-8"
           >
             <h1 className="text-4xl sm:text-5xl md:text-[3.5rem] font-bold leading-tight text-gray-900">
-              Transform Your Career Path with <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-cyan-500">Forsa-Tech</span>
+              Transform Your Career Path with <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500  to-purple-600">Forsa-Tech</span>
             </h1>
             
             <p className="text-lg text-gray-600 max-w-lg leading-relaxed">
               AI-powered platform that helps you build standout resumes, prepare for interviews, 
-              and connect with top tech companies worldwide.
+              and connect with top tech companies in syria.
             </p>
             
             <div className="flex flex-wrap gap-4">
               <motion.button
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.98 }}
-                className="bg-gradient-to-r from-indigo-600 to-cyan-500 text-white px-7 py-3.5 rounded-lg shadow-md hover:shadow-lg transition-all font-medium text-sm"
+                className="bg-gradient-to-r from-blue-500  to-purple-600 text-white px-7 py-3.5 rounded-lg shadow-md hover:shadow-lg transition-all font-medium text-sm"
               >
                 Start Free Trial
               </motion.button>
