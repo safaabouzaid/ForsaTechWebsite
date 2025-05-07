@@ -5,6 +5,7 @@ import WhyChoose from './components/WhyChoose'
 import Statistics from './components/Statistics'
 import ForCompanies from "./components/ForCompanies";
 import Else from "./components/else";
+import ContactUs from "./components/ContactUs";
 function App() {
   return (
     <>
@@ -16,6 +17,7 @@ function App() {
        <Statistics/>
        <ForCompanies/>
        <Else/>
+       <ContactUs/>
     
     </div> </>
   );

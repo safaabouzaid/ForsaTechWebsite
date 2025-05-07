@@ -86,7 +86,7 @@ const WhyChoose = () => {
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.2 }}
           viewport={{ once: true }}
-          className="bg-gradient-to-r from-indigo-50 to-cyan-50 rounded-2xl p-10 text-center"
+          className="bg-indigo-50 rounded-2xl p-10 text-center"
         >
           <h3 className="text-2xl font-bold text-gray-900 mb-3">Ready to Accelerate Your Career?</h3>
           <p className="text-gray-600 max-w-xl mx-auto mb-6">
