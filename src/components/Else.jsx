@@ -4,14 +4,14 @@ import { FiChevronDown } from 'react-icons/fi';
 const testimonials = [
     {
       quote: "Thanks to ForsaTech, I created a great resume and found a job I love all without paying anything.",
-      name: "Jocopeline Wright",
-      position: "UI/UX Designer",
+      name: " safa Abou Zaid",
+      position: "Front end developer",
       date: "November 2023",
       image: "https://randomuser.me/api/portraits/women/44.jpg"
     },
     {
       quote: "We posted 3 openings and hired two amazing interns through ForsaTech. It just works.",
-      name: "Michael Johnson",
+      name: " Mohamad Ali",
       position: "HR Manager",
       company: "TechSolutions Inc.",
       image: "https://randomuser.me/api/portraits/men/32.jpg"
