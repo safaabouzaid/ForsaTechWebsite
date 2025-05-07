@@ -7,14 +7,14 @@ const testimonials = [
       name: " safa Abou Zaid",
       position: "Front end developer",
       date: "November 2023",
-      image: "https://randomuser.me/api/portraits/women/44.jpg"
+      image: "https://www.google.com/imgres?q=user&imgurl=https%3A%2F%2Fstatic.vecteezy.com%2Fsystem%2Fresources%2Fpreviews%2F009%2F292%2F244%2Fnon_2x%2Fdefault-avatar-icon-of-social-media-user-vector.jpg&imgrefurl=https%3A%2F%2Fwww.vecteezy.com%2Ffree-vector%2Fdefault-user&docid=IXUOFmCbuSP32M&tbnid=bhXONIl2bblF7M&vet=12ahUKEwjv4Z7N3pGNAxVknf0HHaibDpQQM3oECF8QAA..i&w=980&h=980&hcb=2&ved=2ahUKEwjv4Z7N3pGNAxVknf0HHaibDpQQM3oECF8QAA"
     },
     {
       quote: "We posted 3 openings and hired two amazing interns through ForsaTech. It just works.",
       name: " Mohamad Ali",
       position: "HR Manager",
       company: "TechSolutions Inc.",
-      image: "https://randomuser.me/api/portraits/men/32.jpg"
+      image: "https://www.google.com/imgres?q=user&imgurl=https%3A%2F%2Fstatic.vecteezy.com%2Fsystem%2Fresources%2Fpreviews%2F009%2F292%2F244%2Fnon_2x%2Fdefault-avatar-icon-of-social-media-user-vector.jpg&imgrefurl=https%3A%2F%2Fwww.vecteezy.com%2Ffree-vector%2Fdefault-user&docid=IXUOFmCbuSP32M&tbnid=bhXONIl2bblF7M&vet=12ahUKEwjv4Z7N3pGNAxVknf0HHaibDpQQM3oECF8QAA..i&w=980&h=980&hcb=2&ved=2ahUKEwjv4Z7N3pGNAxVknf0HHaibDpQQM3oECF8QAA"
     }
   ];
 const questions = [
