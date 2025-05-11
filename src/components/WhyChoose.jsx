@@ -26,7 +26,7 @@ const WhyChoose = () => {
   ];
 
   return (
-    <section className="py-20 px-6 bg-white">
+    <section id="features" className="py-20 px-6 bg-white">
       <div className="max-w-6xl mx-auto">
         
         {/* Header */}
@@ -63,7 +63,7 @@ const WhyChoose = () => {
               className="bg-white p-6 rounded-xl border border-gray-200 hover:border-indigo-200 hover:shadow-lg transition-all"
             >
               <div className="flex items-start gap-4">
-                <div className={`p-2 rounded-full ${feature.checked ? 'bg-indigo-100 text-blue-500' : 'bg-gray-100 text-gray-400'}`}>
+                <div className={`p-2 rounded-full ${feature.checked ? 'bg-indigo-100 text-indigo-600' : 'bg-gray-100 text-gray-400'}`}>
                   <FiCheckCircle size={22} strokeWidth={feature.checked ? 2 : 1.5} />
                 </div>
                 <div>
@@ -90,7 +90,7 @@ const WhyChoose = () => {
         >
           <h3 className="text-2xl font-bold text-gray-900 mb-3">Ready to Accelerate Your Career?</h3>
           <p className="text-gray-600 max-w-xl mx-auto mb-6">
-            Join thousands of professionals who landed their dream jobs with ForsaTech
+          Join professionals who have landed their dream jobs with ForsaTech.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <motion.button

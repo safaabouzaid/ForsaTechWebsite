@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 
 const Statistics = () => {
   return (
-    <section className="py-20 px-6 bg-gray-50">
+    <section id="statistics" className="py-20 px-6 bg-gray-50">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
@@ -22,7 +22,8 @@ const Statistics = () => {
             viewport={{ once: true }}
             className="text-lg text-gray-600 max-w-2xl mx-auto"
           >
-            Forsa-Tech helps developers and graduates stand out. Our AI-powered tools have helped many create standout resumes, find jobs, and prepare for interviews.
+            Business Impact Section (Statistics)
+            Forsa-Tech helps developers and graduates stand out. Our AI-powered tools have helped many create outstanding resumes, evaluate them, provide advice, and find their dream jobs.
           </motion.p>
         </div>
 

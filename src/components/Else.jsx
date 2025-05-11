@@ -1,34 +1,34 @@
 import { motion } from 'framer-motion';
 import { FiChevronDown } from 'react-icons/fi';
-
 const testimonials = [
-    {
-      quote: "Thanks to ForsaTech, I created a great resume and found a job I love all without paying anything.",
-      name: " safa Abou Zaid",
-      position: "Front end developer",
-      date: "November 2023",
-      image: "https://www.google.com/imgres?q=user&imgurl=https%3A%2F%2Fstatic.vecteezy.com%2Fsystem%2Fresources%2Fpreviews%2F009%2F292%2F244%2Fnon_2x%2Fdefault-avatar-icon-of-social-media-user-vector.jpg&imgrefurl=https%3A%2F%2Fwww.vecteezy.com%2Ffree-vector%2Fdefault-user&docid=IXUOFmCbuSP32M&tbnid=bhXONIl2bblF7M&vet=12ahUKEwjv4Z7N3pGNAxVknf0HHaibDpQQM3oECF8QAA..i&w=980&h=980&hcb=2&ved=2ahUKEwjv4Z7N3pGNAxVknf0HHaibDpQQM3oECF8QAA"
-    },
-    {
-      quote: "We posted 3 openings and hired two amazing interns through ForsaTech. It just works.",
-      name: " Mohamad Ali",
-      position: "HR Manager",
-      company: "TechSolutions Inc.",
-      image: "https://www.google.com/imgres?q=user&imgurl=https%3A%2F%2Fstatic.vecteezy.com%2Fsystem%2Fresources%2Fpreviews%2F009%2F292%2F244%2Fnon_2x%2Fdefault-avatar-icon-of-social-media-user-vector.jpg&imgrefurl=https%3A%2F%2Fwww.vecteezy.com%2Ffree-vector%2Fdefault-user&docid=IXUOFmCbuSP32M&tbnid=bhXONIl2bblF7M&vet=12ahUKEwjv4Z7N3pGNAxVknf0HHaibDpQQM3oECF8QAA..i&w=980&h=980&hcb=2&ved=2ahUKEwjv4Z7N3pGNAxVknf0HHaibDpQQM3oECF8QAA"
-    }
-  ];
+  {
+    quote: "Thanks to ForsaTech, I created a great resume and found a job I love all without paying anything.",
+    name: "Safa",
+    position: "Front End Developer",
+    date: "November 2023",
+    image: "https://ui-avatars.com/api/?name=Safa&background=random"
+  },
+  {
+    quote: "We posted 3 openings and hired two amazing interns through ForsaTech. It just works.",
+    name: "Mohamad",
+    position: "HR Manager",
+    company: "TechSolutions Inc.",
+    image: "https://ui-avatars.com/api/?name=Mohamad&background=random"
+  }
+];
+
 const questions = [
     {
-      question: "How long does the recruitment process take?",
-      answer: "Most companies complete their hiring process within 2-3 weeks using our platform."
+      question: "Can I download my resume in PDF format after creating it ?",
+      answer: "Yes, you can download your completed resume in multiple formats, such as PDF."
     },
     {
-      question: "Can we integrate with our existing HR software?",
-      answer: "Yes, we offer seamless integration with most popular HR systems."
+      question: "Can you help me check if my resume matches a specific job ?",
+      answer: "Absolutely! We offer a resume evaluation service that compares your resume to job requirements to determine compatibility."
     },
     {
-      question: "What industries do you specialize in?",
-      answer: "We specialize in tech recruitment but our tools work well for all industries."
+      question: "Can I apply directly to jobs through the Forsatek platform ?",
+      answer: "Yes, you can apply directly, and your resume will be sent to the employer."
     }
   ];
 

@@ -3,7 +3,7 @@ import interviewImage from '../assets/images/heroo.svg';
 
 const Hero = () => {
   return (
-    <section className="pt-28 pb-20 px-6 bg-gradient-to-br from-gray-50 to-white">
+    <section  id="home" className="pt-28 pb-20 px-6  bg-gradient-to-br from-gray-50 to-white">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
           

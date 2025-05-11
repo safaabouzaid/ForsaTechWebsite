@@ -18,7 +18,7 @@ const ForCompanies = () => {
     {
       icon: <FiClipboard className="text-indigo-600" size={24} />,
       title: "Technical Tests",
-      description: "Built-in assessment functionality",
+      description: "",
       link: "Learn more"
     },
     {
@@ -36,7 +36,7 @@ const ForCompanies = () => {
   ];
 
   return (
-    <section className="py-20 px-6 bg-gray-50">
+    <section id="companies" className="py-20 px-6 bg-gray-50">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
@@ -78,7 +78,7 @@ const ForCompanies = () => {
                 <h3 className="text-xl font-semibold text-gray-800">{feature.title}</h3>
               </div>
               <p className="text-gray-500 mb-6">{feature.description}</p>
-              <a href="#" className="text-blue-500 font-medium flex items-center gap-2 hover:text-blue-500 transition-colors">
+              <a href="#" className="text-indigo-600 font-medium flex items-center gap-2 hover:text-indigo-600transition-colors">
                 {feature.link} <FiArrowRight size={16} />
               </a>
             </motion.div>
@@ -90,10 +90,10 @@ const ForCompanies = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6 }}
           viewport={{ once: true }}
-          className="bg-gradient-to-r from-indigo-50 to-cyan-50 rounded-2xl p-10 text-center"
+          className=" bg-indigo-50  rounded-2xl p-10 text-center"
         >
           <h3 className="text-2xl font-bold mb-4">Ready to Transform Your Hiring?</h3>
-          <p className="mb-6 opacity-90 max-w-2xl mx-auto">Join hundreds of companies who found their perfect candidates with ForsaTech</p>
+          <p className="mb-6 opacity-90 max-w-2xl mx-auto">Join companies that have found their ideal candidates with ForsaTech.</p>
           <button className="bg-gradient-to-r from-blue-500  to-purple-600 text-white px-8 py-3.5 rounded-lg shadow-md hover:shadow-lg transition-all font-medium text-sm">
             Register as a company
           </button>

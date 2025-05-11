@@ -9,7 +9,7 @@ const ContactUs = () => {
   };
 
   return (
-    <div className="max-w-6xl mx-auto px-4 py-12">
+    <div id="contact" className="max-w-6xl mx-auto px-4 py-12">
       {/* Need More Information Section */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
@@ -20,7 +20,7 @@ const ContactUs = () => {
       >
         <h2 className="text-3xl font-bold text-gray-900 mb-4">Need more information?</h2>
         <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-          Write your concern to us and our specialist will get back to you.
+       Send us an email with your inquiry and one of our experts will contact you.
         </p>
       </motion.div>
 
