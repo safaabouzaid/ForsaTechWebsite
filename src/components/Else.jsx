@@ -1,5 +1,7 @@
 import { motion } from 'framer-motion';
 import { FiChevronDown } from 'react-icons/fi';
+import { useState } from 'react';
+
 const testimonials = [
   {
     quote: "Thanks to ForsaTech, I created a great resume and found a job I love all without paying anything.",
@@ -33,6 +35,13 @@ const questions = [
   ];
 
 const Else = () => {
+
+  const [openIndex, setOpenIndex] = useState(null);
+
+  const toggleQuestion = (index) => {
+    setOpenIndex(prev => (prev === index ? null : index));
+  };
+  
   return (
     <div>
     <motion.div
@@ -43,20 +52,22 @@ const Else = () => {
       className="mb-20 m-25"
     >
        <h2 className="text-3xl font-bold text-gray-900 mb-10 text-center">Our happy clients</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+       <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-8 px-4">
           {testimonials.map((testimonial, index) => (
             <div 
-              key={`testimonial-${index}`} 
-              className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow"
-            >
+            key={`testimonial-${index}`} 
+            className="bg-white p-6 sm:p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow w-full"
+          >
+          
               <div className="flex items-start mb-6">
-                <img 
-                  src={testimonial.image} 
-                  alt={testimonial.name} 
-                  className="w-14 h-14 rounded-full object-cover mr-5"
-                />
+              <img 
+  src={testimonial.image} 
+  alt={testimonial.name} 
+  className="w-12 h-12 sm:w-14 sm:h-14 rounded-full object-cover mr-4"
+/>
+
               <div>
-              <h4 className="font-semibold text-lg">{testimonial.name}</h4>
+              <h4 className="font-semibold text-lg break-words truncate max-w-full">{testimonial.name}</h4>
                   <p className="text-gray-600 text-sm">
                     {testimonial.position}
                     {testimonial.company && `, ${testimonial.company}`}
@@ -78,21 +89,33 @@ const Else = () => {
         className="mb-16"
       >
         <h2 className="text-3xl font-bold text-gray-900 mb-10 text-center">Frequently asked questions</h2>
-        <div className="space-y-4 max-w-3xl mx-auto">
+        <div className="space-y-4 max-w-3xl mx-auto px-20">
           {questions.map((item, index) => (
-            <div 
-              key={`question-${index}`} 
-              className="border-b border-gray-200 pb-4"
-            >
-              <div className="flex justify-between items-start cursor-pointer group">
-                <h3 className="font-semibold text-lg text-gray-800 group-hover:text-indigo-600 transition-colors">
-                  {item.question}
-                </h3>
-                <FiChevronDown className="text-indigo-600 mt-1 flex-shrink-0 transform group-hover:rotate-180 transition-transform" />
-              </div>
-              <p className="mt-3 text-gray-600 pl-2">{item.answer}</p>
-            </div>
-          ))}
+  <div 
+    key={`question-${index}`} 
+    className="border-b border-gray-200 pb-4"
+  >
+    <div 
+      className="flex justify-between items-start cursor-pointer group"
+      onClick={() => toggleQuestion(index)} 
+    >
+      <h3 className="font-semibold text-lg text-gray-800 group-hover:text-indigo-600 transition-colors">
+        {item.question}
+      </h3>
+      <FiChevronDown
+        className={`text-indigo-600 mt-1 flex-shrink-0 transform transition-transform ${
+          openIndex === index ? 'rotate-180' : ''
+        }`}
+      />
+    </div>
+
+    
+    {openIndex === index && (
+      <p className="mt-3 text-gray-600 pl-2">{item.answer}</p>
+    )}
+  </div>
+))}
+
         </div>
       </motion.div>
   </div>
